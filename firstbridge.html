@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>First Bridge Academy</title>
+  <link rel="stylesheet" href="./firstbridge.css">
+</head>
+<body>
+  <header class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="mark">FB</div>
+        <div>
+          <div class="logo-text">First Bridge Academy</div>
+          <small class="logo-sub">Skills • Care • Community</small>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="cta" id="enrollTop">Enroll</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Practical courses for girls, teens & families</h1>
+        <p class="lead">Hands-on programs in computing, web dev, and special needs teaching.</p>
+        <div class="stats">
+          <div class="stat">+1200 Students</div>
+          <div class="stat">10+ Programs</div>
+          <div class="stat">Flexible schedules</div>
+        </div>
+        <button class="cta" id="enrollBtn">Get Started</button>
+      </div>
+
+      <aside class="hero-card" id="enrollCard">
+        <h3>Quick Enrollment</h3>
+        <form id="enrollForm">
+          <label for="name">Full name</label>
+          <input id="name" required placeholder="Your name">
+          <label for="email">Email or phone</label>
+          <input id="email" required placeholder="Email or phone">
+          <label for="program">Choose program</label>
+          <select id="program">
+            <option>Basic Computer Skills</option>
+            <option>Web Development (Beginner)</option>
+            <option>Special Needs Teaching</option>
+            <option>Summer Youth Camp</option>
+          </select>
+          <button type="submit" class="cta">Submit</button>
+          <button type="button" id="reset" class="btn-outline">Reset</button>
+          <p id="formMsg"></p>
+        </form>
+      </aside>
+    </section>
+
+    <section id="programs">
+      <h2>Popular Programs</h2>
+      <div class="courses">
+        <article class="course-card">
+          <img src="images/student1.jpg" alt="students learning">
+          <h3>Basic Computer Skills</h3>
+          <p>3 weeks — hands-on — certificate</p>
+          <button class="btn-outline enroll" data-course="Basic Computer Skills">Enroll</button>
+        </article>
+        <article class="course-card">
+          <img src="images/webdev.jpg" alt="web dev class">
+          <h3>Web Development (Beginner)</h3>
+          <p>6 weeks — project-based</p>
+          <button class="btn-outline enroll" data-course="Web Development">Enroll</button>
+        </article>
+        <article class="course-card">
+          <img src="images/specialneeds.jpg" alt="special needs teaching">
+          <h3>Special Needs Teaching</h3>
+          <p>4 weeks — tailored content</p>
+          <button class="btn-outline enroll" data-course="Special Needs Teaching">Enroll</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About First Bridge Academy</h2>
+      <p>We support learners of all ages with applied training — from digital literacy to web development and special needs education.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Location</h2>
+      <form id="contactForm">
+        <label for="cname">Name</label>
+        <input id="cname" required placeholder="Your name">
+        <label for="cmsg">Message</label>
+        <textarea id="cmsg" rows="4" required placeholder="How can we help?"></textarea>
+        <button type="submit" class="cta">Send Message</button>
+        <p id="cmsgRes"></p>
+      </form>
+      <p>Phone: +251 9xx xxx xxx | Email: hello@firstbridge.academy</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© First Bridge Academy — Skills for community</p>
+  </footer>
+
+  <script src="./firstbridge.js"></script>
+</body>
+</html>
